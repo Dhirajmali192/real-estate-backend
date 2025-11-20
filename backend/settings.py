@@ -10,7 +10,7 @@ load_dotenv(os.path.join(BASE_DIR, '.env'))
 # Security
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", "False") == "True"
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', os.getenv('RENDER_EXTERNAL_HOSTNAME')]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', os.getenv('RENDER_EXTERNAL_HOSTNAME'), 'https://real-estate-backend-q544.onrender.com']
 
 # Installed Apps
 INSTALLED_APPS = [
